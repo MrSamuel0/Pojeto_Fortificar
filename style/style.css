@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: royalblue;
+}
+
+#cabecalho img {
+    width: 60px;
+}
+
+#corpo {
+    display: flex;
+    flex-direction:  column;
+    align-items: flex-start;
+    height: auto;
+    
+}
+
+footer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: royalblue;
+}
