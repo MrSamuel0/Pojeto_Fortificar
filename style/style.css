@@ -8,8 +8,7 @@ h1 {
 * {
     padding: 0;
     margin: 0;
-    font-family: 'archivo', sans-serif;
-    
+    font-family: 'archivo', 'open sans', sans-serif;
 }
 
 body {
@@ -24,10 +23,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    
 }
 
 #cabecalho img {
-    width: 90px;
+    width: 200px;
 }
 
 #corpo {
@@ -35,7 +35,10 @@ body {
     flex-direction:  column;
     align-items: center;
     height: auto;
-    width: auto;
+    width: 60%;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
@@ -53,7 +56,41 @@ footer {
     padding-right: 10%;
 }
 
-#div {
+#log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: auto;
     width: 60%;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#senha {
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: black;
+    width: 200px;
+    height: 30px;
+}
+
+#email {
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    border-color: black;
+    width: 200px;
+    height: 30px;
+}
+
+#entra {
+    width: 100px;
+    height: 25px;
+    background-color: #06428A;
+    color: white;
+    border-radius: 5px;
 }
