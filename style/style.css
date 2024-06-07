@@ -19,6 +19,8 @@ body {
 
 }
 
+/*página inicial*/
+
 #cabecalho {
     display: flex;
     justify-content: space-between;
@@ -41,7 +43,7 @@ body {
     margin-right: auto;
 }
 
-footer {
+#footer {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -68,6 +70,8 @@ footer {
     
 }
 
+/*pagina de login*/
+
 #senha {
     text-align: center;
     margin: 5px;
@@ -93,4 +97,104 @@ footer {
     background-color: #06428A;
     color: white;
     border-radius: 5px;
+}
+
+/*formulários registrados*/
+
+#tabel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin: auto;
+    margin-top: 200px;
+    width: 80%;    
+}
+
+.head{
+    border: solid black 1px;
+    background-color: #2083FF;
+    width: 40px;
+    height: 30px;
+}
+
+#tbl {
+    border-spacing: 0px;
+    border: solid black 0.5px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.tblelement {
+    border: solid black 1px;
+    text-align: center;
+    height: 60px;
+    background-color: #A3CCFF;
+}
+
+/*register*/
+
+#formm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    margin-top: 80px;
+    height: 300px;
+}
+
+#formm input {
+    border: none;
+    min-width: 60px;
+    padding-left: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#formm input:nth-child(1), #formm input:nth-child(7) {
+    flex-basis: 60%;
+}
+
+#formm input:nth-child(2) {
+    flex-basis: 37%;
+}
+
+#formm input:nth-child(3) {
+    flex-basis: 49.8%;
+}
+
+#formm input:nth-child(4), #formm input:nth-child(5), #formm input:nth-child(6) {
+    flex-basis: 14.78%;
+}
+
+#formm input:nth-child(8) {
+    flex-basis: 37%;
+}
+
+#formm input:nth-child(9), #formm input:nth-child(10) {
+    flex-basis: 48.5%;
+}
+
+#butao {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#butao button {
+    border: none;
+    width: 20%;
+    height: 200%;
+    background-color: #06428A;
+    border-radius: 25px;
+    color: white;
+}
+
+#titlo {
+    text-align: center;
+    margin-top: 10%;
 }

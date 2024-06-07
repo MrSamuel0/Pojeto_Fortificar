@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Cadastro</title>
 </head>
 <body>
-    <form target="_self" action="./register.html" method="post">
+
+    <h1 id="titlo">Cadastre-se abaixo</h1>
+
+    <form target="_self" action="./register.html" method="post" id="formm">
         <input type="text" placeholder="Nome" class="input_geral" />
         <input type="text" placeholder="CNPJ ou CPF" class="input_geral" />
         <input type="text" placeholder="Logradouro" class="input_geral" />
@@ -17,7 +21,9 @@
         <input type="email" placeholder="Email" class="input_geral" />
         <input type="password" placeholder="Senha" name="password"/>
         <input type="password" placeholder="Confirmar senha" name="password"/>
-        <button type="button" onclick="handleClick()">Cadastrar</button>
+        <div id="butao">
+            <button type="button" onclick="handleClick()">Cadastrar</button>
+        </div>
     </form>
     <script src="../script/register.script.js"></script>
 </body>
