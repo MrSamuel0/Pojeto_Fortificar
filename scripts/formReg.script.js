@@ -1,39 +1,25 @@
-const passwords = document.getElementsByName("password");
-
-function validateEqualPassword() {
-    if (passwords[0].value === passwords[1].value) {
-        return true;
-    }
-    return window.alert("As senhas precisam ser iguais")
-};
-
-function createObj() {
-    const data = document.getElementsByClassName("input_geral");
-    const fieldNames = ['Name', 'CNPJ', 'Logradouro', 'Bairro', 'Cidade', 'CEP', 'Telefone', 'Email', 'Describe'];
-    const dataUser = {};
-    fieldNames.forEach((field, index) => {
-        dataUser[field] = data[index].value;
-    });
-    dataUser.Senha = passwords[0].value;
-    const date = new Date();
-    const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
-    dataUser.Data = formattedDate;
-    return dataUser
-};
-
-function handleClick() {
-    validateEqualPassword();
-    let users = JSON.parse(localStorage.getItem("Dados_do_usuário")) || [];
-    users.push(createObj());
-    localStorage.setItem("Dados_do_usuário", JSON.stringify(users));
-    window.open("../pages/login.html");
-};
-
 function createTableCell(content, tagName = "td", className = "tblelement") {
     const cell = document.createElement(tagName);
     cell.innerText = content;
     cell.className = className;
     return cell;
+}
+
+
+function deleteUser(name) {
+    const users = JSON.parse(localStorage.getItem("Dados_do_usuário"));
+    const result = users.filter((user) => !(user.Name === name));
+    localStorage.setItem("Dados_do_usuário", JSON.stringify(result));
+    window.location.reload();
+}
+
+function createButtons(content, name, isDelete = false) {
+    const url = new URL("pages/register.html", window.location.origin);
+    url.searchParams.append("nome", name)
+    const button = document.createElement("button");
+    button.innerText = content;
+    button.onclick = () => isDelete ? deleteUser(name) : window.open(url);
+    return button;
 }
 
 function generateRandomStatus() {
@@ -46,7 +32,7 @@ function printDataUser() {
     const users = JSON.parse(localStorage.getItem("Dados_do_usuário"));
     const tr = document.getElementsByClassName("nome_da_coluna");
     const div = document.getElementById("botões");
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < users.length; i++) {
         const user = users[i];
         // const th = document.createElement("th");
         // const td1 = document.createElement("td");
@@ -66,8 +52,8 @@ function printDataUser() {
         const dataCell = createTableCell(user.Data);
         const describeCell = createTableCell(user.Describe);
         const statusCell = createTableCell(generateRandomStatus());
-        const editButton = createTableCell("Editar", "button");
-        const deleteButton = createTableCell("Deletar", "button");
+        const editButton = createButtons("Editar", user.Name);
+        const deleteButton = createButtons("Deletar", user.Name, true);
         tr[i].appendChild(headerCell);
         tr[i].appendChild(dataCell);
         tr[i].appendChild(describeCell);
