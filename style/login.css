@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+h1 {
+    font-size: 2em;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'archivo', 'open sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #0A769B, #49CADA);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#senha {
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: black;
+    width: 200px;
+    height: 30px;
+}
+
+#email {
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    border-color: black;
+    width: 200px;
+    height: 30px;
+}
+
+#entra {
+    width: 100px;
+    height: 25px;
+    background-color: #06428A;
+    color: white;
+    border-radius: 5px;
+}
