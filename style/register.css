@@ -27,39 +27,19 @@ body {
     width: 95%;
     margin: auto;
     margin-top: 80px;
-    height: 300px;
+    height: 400px;
 }
 
 #formm input {
     border: none;
-    min-width: 60px;
     padding-left: 10px;
     border-radius: 20px;
     margin-top: 10px;
+    min-height: 30px;
 }
 
-#formm input:nth-child(1), #formm input:nth-child(7) {
-    flex-basis: 60%;
-}
-
-#formm input:nth-child(2) {
-    flex-basis: 37%;
-}
-
-#formm input:nth-child(3) {
-    flex-basis: 49.8%;
-}
-
-#formm input:nth-child(4), #formm input:nth-child(5), #formm input:nth-child(6) {
-    flex-basis: 14.78%;
-}
-
-#formm input:nth-child(8) {
-    flex-basis: 37%;
-}
-
-#formm input:nth-child(9), #formm input:nth-child(10) {
-    flex-basis: 48.5%;
+#formm input:nth-child(1), #formm input:nth-child(2), #formm input:nth-child(3), #formm input:nth-child(4), #formm input:nth-child(5), #formm input:nth-child(6), #formm input:nth-child(7), #formm input:nth-child(8), #formm input:nth-child(9), #formm input:nth-child(10){
+    flex-basis: 100%;
 }
 
 #butao {
@@ -77,9 +57,20 @@ body {
     background-color: #06428A;
     border-radius: 25px;
     color: white;
+    min-height: 40px;
+    margin-top: 20px;
 }
 
 #titlo {
     text-align: center;
     margin-top: 10%;
+}
+
+#input {
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    resize: none;
 }

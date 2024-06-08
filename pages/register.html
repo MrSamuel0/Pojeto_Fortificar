@@ -7,25 +7,25 @@
     <title>Cadastro</title>
 </head>
 <body>
-
-    <h1 id="titlo">Cadastre-se abaixo</h1>
-
-    <form target="_self" action="./register.html" method="post" id="formm">
-        <input type="text" placeholder="Nome" class="input_geral" />
-        <input type="text" placeholder="CNPJ ou CPF" class="input_geral" />
-        <input type="text" placeholder="Logradouro" class="input_geral" />
-        <input type="text" placeholder="Bairro" class="input_geral" />
-        <input type="text" placeholder="Cidade" class="input_geral" />
-        <input type="text" placeholder="CEP" class="input_geral" />
-        <input type="number" placeholder="Telefone" class="input_geral" />
-        <input type="email" placeholder="Email" class="input_geral" />
-        <input type="password" placeholder="Senha" name="password"/>
-        <input type="password" placeholder="Confirmar senha" name="password"/>
-        <textarea placeholder="Descrição do Projeto" class="input_geral"></textarea>
-        <div id="butao">
-            <button type="button" onclick="handleClick()">Cadastrar</button>
-        </div>
-    </form>
+    <main>
+        <h1 id="titlo">Cadastre-se abaixo</h1>
+        <form target="_self" action="./register.html" method="post" id="formm">
+            <input type="text" placeholder="Nome" class="input_geral" />
+            <input type="text" placeholder="CNPJ ou CPF" class="input_geral" />
+            <input type="text" placeholder="Logradouro" class="input_geral" />
+            <input type="text" placeholder="Bairro" class="input_geral" />
+            <input type="text" placeholder="Cidade" class="input_geral" />
+            <input type="text" placeholder="CEP" class="input_geral" />
+            <input type="number" placeholder="Telefone" class="input_geral" />
+            <input type="email" placeholder="Email" class="input_geral" />
+            <input type="password" placeholder="Senha" name="password"/>
+            <input type="password" placeholder="Confirmar senha" name="password"/>
+            <textarea cols="30" rows="5" id="input" placeholder="Descrição do projeto..."></textarea>
+            <div id="butao">
+                <button type="button" onclick="handleClick()">Cadastrar</button>
+            </div>
+        </form>
     <script src="../script/register.script.js"></script>
+    </main>
 </body>
 </html>
