@@ -33,6 +33,7 @@ function handleClick() {
 
 function editUser() {
     const name = urlParams.get("nome");
+    console.log(name);
     if (name) {
         const user = users.find((user) => user.Name === name);
         const inputs = document.getElementsByClassName("input_geral");
