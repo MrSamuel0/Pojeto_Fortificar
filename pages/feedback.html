@@ -9,15 +9,19 @@
 <body>
     <main id="principal">
         <h1>Feedback</h1>
+        <label>Email:
+            <input type="email" placeholder="Digite o seu email" id="input_email" />
+        </label>
         <select name="select" id="sel">
             <option value="" disabled selected>Gênero da sugestão:</option>
-            <option value="a">Estrutura</option>
-            <option value="b">Design</option>
-            <option value="c">Informações</option>
-            <option value="d">Outros</option>
+            <option value="Estrutura">Estrutura</option>
+            <option value="Design">Design</option>
+            <option value="Informações">Informações</option>
+            <option value="Outros">Outros</option>
         </select>
         <textarea cols="30" rows="5" id="texto" placeholder="Digite seu feedback..."></textarea>
-        <button id="envia">Enviar</button>
+        <button type="button" onclick="addToLocalStorage()" id="envia">Enviar</button>
     </main>
+    <script src="../scripts/feedback.script.js"></script>
 </body>
 </html>
