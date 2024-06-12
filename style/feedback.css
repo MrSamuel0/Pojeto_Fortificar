@@ -2,8 +2,19 @@
 
 h1 {
     font-size: 2em;
+    text-align: center;
 }
 
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+#cabecalho img {
+    width: 200px;
+}
 
 * {
     padding: 0;
@@ -50,4 +61,12 @@ body {
     height: 8%;
     width: 12%;
     background-color: #80B0ED;
+}
+
+#input_email {
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    text-align: center;
 }

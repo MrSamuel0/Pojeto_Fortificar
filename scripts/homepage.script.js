@@ -1,7 +1,7 @@
 function switchPages(i) {
     const pageMap = {
         0: { text: "Registros antigos", url: "../pages/old_reg.html" },
-        1: { text: "Feedbacks", url: "../pages/feedback.html" },
+        1: { text: "Feedbacks", url: "../pages/feedbacks_reg.html" },
         2: { text: "Solicitações", url: "../pages/requests.html" },
         3: { text: "Entidades Beneficiadas", url: "../pages/benefited_entities.html" }
     };

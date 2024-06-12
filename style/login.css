@@ -2,6 +2,7 @@
 
 h1 {
     font-size: 2em;
+    text-align: center;
 }
 
 
@@ -16,32 +17,40 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
-#senha {
-    text-align: center;
+#log img {
+    width: 200px;
+}
+
+#log {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+#log input {
     margin: 5px;
     margin-bottom: 10px;
     border-radius: 5px;
     border-color: black;
     width: 200px;
     height: 30px;
+    padding: 5px;
 }
 
-#email {
+#log input::placeholder {
     text-align: center;
-    margin: 5px;
-    border-radius: 5px;
-    border-color: black;
-    width: 200px;
-    height: 30px;
 }
 
 #entra {
     width: 100px;
     height: 25px;
     background-color: #06428A;
-    color: white;
+    color: aliceblue;;
     border-radius: 5px;
 }
+
+

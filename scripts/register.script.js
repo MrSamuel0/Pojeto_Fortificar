@@ -33,16 +33,16 @@ function handleClick() {
 
 function editUser() {
     const name = urlParams.get("nome");
-    console.log(name);
     if (name) {
+        const button = document.getElementById("confirm_button");
+        const title = document.getElementById("titlo");
+        title.innerText = "Editar os dados";
+        button.innerText = "Editar";
         const user = users.find((user) => user.Name === name);
         const inputs = document.getElementsByClassName("input_geral");
         fieldNames.forEach((field, index) => {
             inputs[index].value = user[field]
         });
-        const button = document.getElementById("confirm_button");
-        const changeNameButton = button.innerText = "Editar";
-        name.length && changeNameButton;
         button.onclick = () => {
             if (!validateEqualPassword()) return null;
             const index = users.indexOf(user);

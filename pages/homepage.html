@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/homepage.css">
     <title>Área de Trabalho</title>
 </head>
 <body>
-    <main>
+    <header id="cabecalho">
+        <a href="../index.html">
+            <img src="../images/Fortes_img.png" alt="Logomarca da empresa fortes">
+        </a>
+    </header>
+    <main id="main">
         <h1>Área de trabalho</h1>
-        <button type="button" onclick="switchPages(0)">Registros antigos</button>
-        <button type="button" onclick="switchPages(1)">Feedbacks</button>
-        <button type="button" onclick="switchPages(2)">Solicitações</button>
-        <button type="button" onclick="switchPages(3)">Entidades Beneficiadas</button>
+        <div id="navbuttons">
+            <button type="button" onclick="switchPages(0)">Registros antigos</button>
+            <button type="button" onclick="switchPages(1)">Feedbacks</button>
+            <button type="button" onclick="switchPages(2)">Solicitações</button>
+            <button type="button" onclick="switchPages(3)">Entidades Beneficiadas</button>
+        </div>
     </main>
     <script src="../scripts/homepage.script.js"></script>
 </body>

@@ -2,6 +2,7 @@
 
 h1 {
     font-size: 2em;
+    text-align: center;
 }
 
 
@@ -19,12 +20,23 @@ body {
 
 }
 
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+#cabecalho img {
+    width: 200px;
+}
+
 #formm {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    align-items: flex-start;
     justify-content: space-between;
-    width: 95%;
+    width: 70%;
     margin: auto;
     margin-top: 80px;
     height: 400px;
@@ -36,9 +48,6 @@ body {
     border-radius: 20px;
     margin-top: 10px;
     min-height: 30px;
-}
-
-#formm input:nth-child(1), #formm input:nth-child(2), #formm input:nth-child(3), #formm input:nth-child(4), #formm input:nth-child(5), #formm input:nth-child(6), #formm input:nth-child(7), #formm input:nth-child(8), #formm input:nth-child(9), #formm input:nth-child(10){
     flex-basis: 100%;
 }
 
@@ -56,7 +65,7 @@ body {
     height: 200%;
     background-color: #06428A;
     border-radius: 25px;
-    color: white;
+    color: aliceblue;
     min-height: 40px;
     margin-top: 20px;
 }

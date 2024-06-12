@@ -2,6 +2,9 @@
 
 h1 {
     font-size: 2em;
+    text-align: center;
+    width: 100% ;
+    margin-bottom: 40px;
 }
 
 
@@ -16,13 +19,25 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
 
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+#cabecalho img {
+    width: 200px;
 }
 
 #tabel {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: auto;
     margin: auto;
     margin-top: 200px;
@@ -39,8 +54,7 @@ body {
 #tbl {
     border-spacing: 0px;
     border: solid black 0.5px;
-    margin-top: 40px;
-    width: 100%;
+    width: 85%;
 }
 
 .tblelement {
@@ -48,4 +62,31 @@ body {
     text-align: center;
     height: 60px;
     background-color: #A3CCFF;
+    word-wrap: break-word;
+    max-width: 300px;
+}
+
+#botoes {   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: flex-end;
+    padding-top: 38px;
+    width: 185px;
+    align-self: start;
+}
+
+button {
+    border: none;
+    width: 70px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
 }

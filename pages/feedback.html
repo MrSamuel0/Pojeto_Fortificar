@@ -7,17 +7,24 @@
     <title>Deixe seu feedback</title>
 </head>
 <body>
+    <header id="cabecalho">
+        <a href="../index.html">
+            <img src="../images/Fortes_img.png" alt="Logomarca da empresa fortes">
+        </a>
+    </header>
     <main id="principal">
         <h1>Feedback</h1>
         <select name="select" id="sel">
             <option value="" disabled selected>Gênero da sugestão:</option>
-            <option value="a">Estrutura</option>
-            <option value="b">Design</option>
-            <option value="c">Informações</option>
-            <option value="d">Outros</option>
+            <option value="Estrutura">Estrutura</option>
+            <option value="Design">Design</option>
+            <option value="Informações">Informações</option>
+            <option value="Outros">Outros</option>
         </select>
+        <input type="email" placeholder="Digite o seu email" id="input_email" />
         <textarea cols="30" rows="5" id="texto" placeholder="Digite seu feedback..."></textarea>
-        <button id="envia">Enviar</button>
+        <button type="button" onclick="addToLocalStorage()" id="envia">Enviar</button>
     </main>
+    <script src="../scripts/feedback.script.js"></script>
 </body>
 </html>
