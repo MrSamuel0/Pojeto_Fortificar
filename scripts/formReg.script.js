@@ -30,7 +30,7 @@ function generateRandomStatus() {
 
 function printDataUser() {
     const tr = document.getElementsByClassName("nome_da_coluna");
-    const div = document.getElementById("botões");
+    const div = document.getElementById("botoes");
     for (let i = 0; i < users.length; i++) {
         const user = users[i];
         // const th = document.createElement("th");

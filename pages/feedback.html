@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/feedback.css">
+    <link rel="shortcut icon" href="../images/FortesLogobyDesigner.png" type="image/x-icon">
     <title>Deixe seu feedback</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
     </header>
     <main id="principal">
         <h1>Feedback</h1>
-        <label>Email:
+        <label for="input_email">Email:
             <input type="email" placeholder="Digite o seu email" id="input_email" />
         </label>
         <select name="select" id="sel">
@@ -24,7 +25,6 @@
             <option value="Informações">Informações</option>
             <option value="Outros">Outros</option>
         </select>
-        <input type="email" placeholder="Digite o seu email" id="input_email" />
         <textarea cols="30" rows="5" id="texto" placeholder="Digite seu feedback..."></textarea>
         <button type="button" onclick="addToLocalStorage()" id="envia">Enviar</button>
     </main>
