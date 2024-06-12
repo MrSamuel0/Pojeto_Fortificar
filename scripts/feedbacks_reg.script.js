@@ -10,6 +10,7 @@ function printFeedbacks() {
     const tr = document.getElementsByClassName("nome_da_coluna");
     feedbacks.forEach((feedback, index) => {
         const headerCell = createTableCell(feedback.owner, "th");
+        headerCell.scope = "row";
         const dateCell = createTableCell(feedback.date);
         const typeCell = createTableCell(feedback.type);
         const descriptionCell = createTableCell(feedback.description);
