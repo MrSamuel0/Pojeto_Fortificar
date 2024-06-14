@@ -13,7 +13,7 @@ function addLocalStorage() {
         Cidade: "Vila Velha",
         CEP: "89740-000",
         Telefone: 2799021321,
-        Email: "Donatario001",
+        Email: "Donatario01",
         Senha: "dona123",
         Data: date.toLocaleDateString(),
         Describe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consequat augue sit amet interdum ultrices. Etiam ut erat sollicitudin, iaculis arcu vel, varius ipsum. Vivamus viverra nunc ac feugiat viverra."
