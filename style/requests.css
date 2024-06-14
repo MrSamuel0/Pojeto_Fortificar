@@ -32,6 +32,19 @@ body {
     width: 200px;
 }
 
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: center;
+}
+
+#nav_buttons a {
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+}
+
 #tabel {
     display: flex;
     align-items: center;

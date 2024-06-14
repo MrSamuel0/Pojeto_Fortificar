@@ -25,7 +25,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    
+    align-items: center;
+}
+
+#nav_buttons a {
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
 }
 
 #cabecalho img {
@@ -41,7 +47,7 @@ body {
     height: auto;
     margin: auto;
     margin-top: 200px;
-    width: 80%;    
+    width: 100%;    
 }
 
 .head{
@@ -55,7 +61,8 @@ body {
 #tbl {
     border-spacing: 0px;
     border: solid black 0.5px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 .tblelement {

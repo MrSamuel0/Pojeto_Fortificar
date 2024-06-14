@@ -24,5 +24,5 @@ function addToLocalStorage() {
     const feedback = feedbackObj(typeSuggestion, description, email);
     feedbacks.push(feedback);
     localStorage.setItem("Feedbacks", JSON.stringify(feedbacks));
-    return window.open("feedbacks_reg.html", "_self");
+    return window.open("form_reg.html", "_self");
 }
