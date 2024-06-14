@@ -29,23 +29,10 @@ function generateRandomStatus() {
 }
 
 function printDataUser() {
-    const tr = document.getElementsByClassName("nome_da_coluna");
+    const tbody = document.getElementById("corpo_da_tabela");
     const div = document.getElementById("botoes");
     for (let i = 0; i < users.length; i++) {
         const user = users[i];
-        // const th = document.createElement("th");
-        // const td1 = document.createElement("td");
-        // const td2 = document.createElement("td");
-        // th.innerText = users[index].Name;
-        // th.scope = "row";
-        // th.class = "tblelement";
-        // td1.innerText = users[index].Data;
-        // td1.class = "tblelement";
-        // td2.innerText = users[index].Describe;
-        // td2.class = "tblelement";
-        // tr[index].appendChild(th);
-        // tr[index].appendChild(td1);
-        // tr[index].appendChild(td2);
         const headerCell = createTableCell(user.Name, "th");
         headerCell.scope = "row";
         const dataCell = createTableCell(user.Data);
@@ -53,10 +40,12 @@ function printDataUser() {
         const statusCell = createTableCell(generateRandomStatus());
         const editButton = createButtons("Editar", user.Name);
         const deleteButton = createButtons("Deletar", user.Name, true);
-        tr[i].appendChild(headerCell);
-        tr[i].appendChild(dataCell);
-        tr[i].appendChild(describeCell);
-        tr[i].appendChild(statusCell);
+        const tr = createTableCell("", "tr", "nome_da_coluna");
+        tbody.appendChild(tr);
+        tr.appendChild(headerCell);
+        tr.appendChild(dataCell);
+        tr.appendChild(describeCell);
+        tr.appendChild(statusCell);
         div.appendChild(editButton);
         div.appendChild(deleteButton);
     }
