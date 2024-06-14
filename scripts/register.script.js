@@ -1,5 +1,5 @@
 const passwords = document.getElementsByName("password");
-const fieldNames = ['Name', 'CNPJ', 'Logradouro', 'Bairro', 'Cidade', 'CEP', 'Telefone', 'Email', 'Describe'];
+const fieldNames = ['Name', 'CNPJ ou CPF', 'Logradouro', 'Bairro', 'Cidade', 'CEP', 'Telefone', 'Email', 'Describe'];
 const urlParams = new URLSearchParams(window.location.search);
 let users = JSON.parse(localStorage.getItem("Dados_do_usuário")) || [];
 
