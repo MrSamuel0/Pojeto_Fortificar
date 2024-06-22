@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "archivo";
+    src: url(../Fonts/Archivo);
+}
+
 h1 {
     font-size: 2em;
     text-align: center;
